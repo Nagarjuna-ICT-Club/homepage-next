@@ -22,13 +22,13 @@ const contacts = [
 
 const Footer = () => {
   return (
-    <div className={`"flex flex-col" ${style.footer__container}`}>
+    <div className={`${style.footer__container}`}>
       <div className={`${style.newsletter}`}>
         <h1>
           Get the latest R&D updates straight to your inbox. Subscribe to our
           newsletter now!
         </h1>
-        <div className="flex gap-3">
+        <div className={`flex gap-3`}>
           <input
             type="email"
             name=""
