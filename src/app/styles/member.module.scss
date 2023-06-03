@@ -1,0 +1,31 @@
+.member__container {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 17px;
+
+    i {
+      cursor: pointer;
+    }
+  }
+
+  img {
+    object-fit: cover;
+    height: auto;
+  }
+
+  .links {
+    display: flex;
+    gap: 8px;
+  }
+}

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import style from "./styles/navbar.module.scss";
 import MobileNavigation from "@/components/MobileNav";
+import { useRouter } from "next/navigation";
 
 export const links = [
   {
@@ -13,7 +14,7 @@ export const links = [
   },
   {
     link: "About Us",
-    href: "/",
+    href: "/aboutus",
   },
   {
     link: "Blogs",
@@ -35,12 +36,10 @@ export const links = [
 const Navbar = () => {
   const [showmobilenav, setShowMobileNav] = React.useState(false);
   const mobilenavigationref = React.useRef();
+  const router = useRouter();
 
   function useOutsideAlerter(ref) {
     React.useEffect(() => {
-      /**
-       * Alert if clicked on outside of element
-       */
       function handleClickOutside(event) {
         if (ref.current && !ref.current.contains(event.target)) {
           setShowMobileNav(false);
@@ -54,11 +53,12 @@ const Navbar = () => {
       };
     }, [ref]);
   }
+
   return (
     <div
       className={`flex items-center justify-between  ${style.navbar__container}`}
     >
-      <div>
+      <div onClick={() => router.push("/")} style={{cursor:"pointer"}}>
         <Image
           src={logo}
           width={100}
@@ -86,6 +86,7 @@ const Navbar = () => {
           </p>
         )}
       </div>
+
       {showmobilenav && (
         <MobileNavigation
           mobilenavigationref={mobilenavigationref}

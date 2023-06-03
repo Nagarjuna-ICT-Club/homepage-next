@@ -16,7 +16,7 @@ const contacts = [
     contact: "98xxxxxxxx",
   },
   {
-    logo: <i class="ri-map-pin-line"></i>,
+    logo: <i className="ri-map-pin-line"></i>,
     contact: "Nagarjuna College Of IT,Sankhamul",
   },
 ];

@@ -1,0 +1,51 @@
+@import "../variable.scss";
+
+.team__container {
+  .team__header {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+
+    @media screen and (min-width: 426px) {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .gif__container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media screen and (min-width: 426px) {
+        justify-self: end;
+      }
+    }
+
+    .team__intro {
+      h1 {
+        font-size: 38px;
+        // font-size: $--header-font-size;
+        font-weight: 600;
+      }
+
+      p {
+        font-size: $--paragraph-font-size;
+      }
+    }
+  }
+  .teams {
+    max-width: 1450px;
+    padding: 40px 0;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    @media screen and (min-width: 426px) {
+      width: 80%;
+      margin-left: auto;
+    }
+  }
+}
