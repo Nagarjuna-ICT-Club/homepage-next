@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Hero from "@/components/Hero";
+import MeetTeam from "@/components/MeetOurTeam";
 
 const Main = () => {
   return (
-    <div>Main</div>
-  )
-}
+    <div>
+      <Hero />
+      <MeetTeam />
+    </div>
+  );
+};
 
-export default Main
+export default Main;
