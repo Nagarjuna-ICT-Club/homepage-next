@@ -1,0 +1,74 @@
+@import "../variable.scss";
+
+.about__container {
+  padding: 20px 0;
+
+  .about__header {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+    gap: 50px;
+
+    @media screen and (min-width: 426px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    h1 {
+      font-size: $--header-font-size;
+      padding: 10px 0;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+  .img__container {
+    width: 100vw;
+    height: 500px;
+    position: relative;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .divider {
+    width: 90%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+  }
+  .description {
+    width: 90%;
+    margin: 10px auto;
+
+    @media screen and (min-width: 426px) {
+      display: grid;
+      grid-template-columns: 2fr 4fr;
+    }
+
+    h2 {
+      font-size: 38px;
+    }
+
+    p {
+      font-size: 22px;
+    }
+  }
+  .quote_container {
+    padding: 50px 0;
+    width: 90%;
+    margin: 0 auto;
+
+    @media screen and (min-width: 426px) {
+      width: 70%;
+    }
+
+    q {
+      font-size: 28px;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+}
