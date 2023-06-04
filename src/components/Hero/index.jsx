@@ -50,14 +50,6 @@ const Hero = () => {
             height={80}
             data-img-value= "4"
           />
-          {/* <Image
-            src={
-              "https://images.unsplash.com/photo-1573495804660-b6b271f4c3f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"
-            }
-            width={80}
-            height={80}
-            data-img-value= "5"
-          /> */}
           <Image
             src={
               "https://images.unsplash.com/photo-1573495804660-b6b271f4c3f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"
