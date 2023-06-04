@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "@/components/Hero";
 import MeetTeam from "@/components/MeetOurTeam";
 import FeaturedEvents from "@/components/FeaturedEvent";
+import Testimonials from "@/components/Testimonials";
 
 const Main = () => {
   const featuredEvent = [
@@ -22,6 +23,7 @@ const Main = () => {
       <Hero />
       {/* <MeetTeam /> */}
       <FeaturedEvents featuredEvent={featuredEvent} />
+      <Testimonials />
     </div>
   );
 };
