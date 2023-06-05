@@ -11,7 +11,12 @@ const nextConfig = {
         protocol:"https",
         hostname:"ik.imagekit.io",
         port:""
-      }
+      },
+    {
+      protocol:"https",
+      hostname:"i0.wp.com",
+      port:""
+    }
     ],
   },
 };

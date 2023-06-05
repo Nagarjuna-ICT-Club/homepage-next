@@ -17,12 +17,8 @@ export const links = [
     href: "/aboutus",
   },
   {
-    link: "Blogs",
-    href: "/",
-  },
-  {
     link: "Events",
-    href: "/",
+    href: "events/",
   },
   {
     link: "Members",
