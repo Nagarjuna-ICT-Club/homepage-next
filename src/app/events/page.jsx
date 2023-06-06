@@ -1,7 +1,7 @@
 import React from "react";
 import moment from "moment";
 import style from "../styles/events.module.scss";
-import Event from "@/components/Event";
+import Event from "src/components/Event";
 
 const Events = () => {
   const events = [

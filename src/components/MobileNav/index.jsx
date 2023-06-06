@@ -1,6 +1,6 @@
 import React from "react";
 import style from "../../app/styles/mobilenavigation.module.scss";
-import { links } from "@/app/Navbar";
+import { links } from "src/app/Navbar";
 import Link from "next/link";
 
 const MobileNavigation = ({ mobilenavigationref, useOutsideAlerter }) => {

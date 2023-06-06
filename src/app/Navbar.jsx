@@ -4,7 +4,7 @@ import logo from "./assets/logo.webp";
 import Image from "next/image";
 import Link from "next/link";
 import style from "./styles/navbar.module.scss";
-import MobileNavigation from "@/components/MobileNav";
+import MobileNavigation from "src/components/MobileNav";
 import { useRouter } from "next/navigation";
 
 export const links = [
@@ -18,15 +18,15 @@ export const links = [
   },
   {
     link: "Events",
-    href: "events/",
+    href: "/events",
   },
   {
     link: "Members",
-    href: "/",
+    href: "/members",
   },
   {
     link: "Gallery",
-    href: "/",
+    href: "/gallery",
   },
 ];
 const Navbar = () => {
