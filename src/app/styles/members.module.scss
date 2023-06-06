@@ -1,0 +1,29 @@
+@import "../variable.scss";
+
+.members__container {
+  h1 {
+    font-size: $--header-font-size;
+    padding-block: 50px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 4px;
+  }
+
+  .executive__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+
+    h2 {
+      font-size: 30px;
+      color: $--brand-color;
+      padding-block: 5px;
+    }
+    p {
+      font-size: 20px;
+    }
+
+  }
+}

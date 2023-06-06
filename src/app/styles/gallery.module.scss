@@ -1,0 +1,105 @@
+@import "../variable.scss";
+
+.gallery__container {
+  h1 {
+    font-size: $--header-font-size;
+    padding-block: 50px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 2px;
+
+    @media screen and (min-width: 426px) {
+      width: 70%;
+      letter-spacing: 4px;
+    }
+  }
+  .gallery__wrapper {
+    width: 90%;
+    margin: 0 auto;
+    h2 {
+      font-size: 30px;
+      padding-block: 20px;
+      color: $--brand-color;
+    }
+
+    .albums__container {
+      padding-block: 20px;
+      display: grid;
+      @media screen and (min-width: 426px) {
+        grid-auto-flow: column;
+      }
+      .album {
+        img {
+          object-fit: cover;
+        }
+
+        h3 {
+          font-size: 30px;
+          color: $--brand-color;
+        }
+        p {
+          font-size: 20px;
+        }
+
+        &[data-album="first"] {
+          display: flex;
+          flex-direction: column;
+
+          @media screen and (min-width: 426px) {
+            gap: 100px;
+          }
+
+          .album__first {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+        }
+
+        [data-album-img="second"] {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          gap: 20px;
+        }
+
+        &[data-album="second"] {
+          
+            @media screen and (max-width:426px) {
+                padding: 20px 0;
+            }
+
+          @media screen and (min-width: 426px) {
+            padding: 0px 100px;
+          }
+
+          h3 {
+            padding-bottom: 10px;
+          }
+
+          p {
+            padding: 20px 0;
+          }
+
+          [data-album-img="first"] {
+            display: flex;
+            flex-direction: column;
+          }
+          [data-album-img="second"] {
+            display: flex;
+
+            @media screen and (min-width: 426px) {
+              padding: 40px 0;
+            }
+
+            img {
+              object-fit: cover;
+              height: 500px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

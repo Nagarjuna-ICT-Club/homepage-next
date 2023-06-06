@@ -3,7 +3,7 @@
 .featuredevents__container {
   width: 90%;
   margin: 0 auto;
-  padding-block: 30px;
+  padding-block: 50px;
 
   h1 {
     font-size: $--header-font-size;
@@ -18,6 +18,7 @@
   }
 
   .event__container {
+    padding-block: 20px;
     .event {
       @media screen and (min-width: 769px) {
         display: grid;
