@@ -1,6 +1,7 @@
 @import "../variable.scss";
 
 .testimonials__container {
+  padding-block: 20px;
   h1 {
     color: $--brand-color;
     text-align: center;
@@ -15,42 +16,43 @@
     width: 90%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
-    // align-items: start;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    align-items: start;
     // height: auto;
     // grid-auto-rows: min-content;
     grid-auto-flow: dense;
     gap: 25px;
     .testimonial {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      box-shadow: rgb(0 0 0 / 18%) 0px 1px 9px 0px;
+      padding: 15px;
+
+      .img_container {
         display: flex;
-        flex-direction: column;
-        gap: 10px;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 12px;
-        padding: 12px;
-    
-        .img_container {
-          display: flex;
-          gap: 15px;
-    
-          img {
-            border-radius: 50%;
-            object-fit: cover;
-          }
-          .memeber_details {
-            h3 {
-              font-size: 20px;
-            }
-            p {
-              color: rgba(0, 0, 0, 0.775);
-            }
-          }
+        gap: 15px;
+
+        img {
+          border-radius: 50%;
+          object-fit: cover;
+          aspect-ratio: 1;
         }
-        .description {
+        .memeber_details {
+          h3 {
+            font-size: 20px;
+          }
           p {
-            font-size: 18px;
-            text-align:justify;
+            color: rgba(0, 0, 0, 0.775);
           }
         }
       }
+      .description {
+        p {
+          font-size: 18px;
+          text-align: justify;
+        }
+      }
+    }
   }
 }

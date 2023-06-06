@@ -110,13 +110,15 @@ const Members = () => {
               />
               <h3>{member.name}</h3>
               <h4>{member.title}</h4>
-              {member.links.map((link, i) => {
-                return (
-                  <div key={i} className={style.links}>
-                    <Link href={link.link}>{link.logo}</Link>
-                  </div>
-                );
-              })}
+              <div className={style.links}>
+                {member.links.map((link, i) => {
+                  return (
+                    <Link href={link.link} key={i}>
+                      {link.logo}
+                    </Link>
+                  );
+                })}
+              </div>
             </div>
           );
         })}

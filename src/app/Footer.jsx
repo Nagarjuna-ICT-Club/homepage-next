@@ -29,7 +29,7 @@ const Footer = () => {
           Get the latest R&D updates straight to your inbox. Subscribe to our
           newsletter now!
         </h1>
-        <div className={`flex gap-3`}>
+        <div className={`flex gap-3 ${style.input__container}`}>
           <input
             type="email"
             name=""
@@ -75,7 +75,7 @@ const Footer = () => {
           </div>
           <div className={style.info}>
             <h2>Contacts</h2>
-            <div className="flex flex-col gap-1">
+            <div className={`flex flex-col gap-1 ${style.contacts} `}>
               {contacts.map((contact, i) => {
                 return (
                   <p key={i} className="flex gap-2">
