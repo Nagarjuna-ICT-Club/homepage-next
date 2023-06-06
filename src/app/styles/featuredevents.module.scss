@@ -30,19 +30,25 @@
 
       .event_description {
         padding-block: 10px;
+        @media screen and (min-width:426px) {
+          width: 80%;
+          margin-right: auto;;
+        }
         h2 {
-          font-size: 28px;
+          font-size: $--header-font-size;
           color: $--brand-color;
           padding-bottom: 10px;
         }
         p {
           padding-bottom: 10px;
           display: flex;
+          font-size: 20px;
           gap: 10px;
         }
         .description {
           font-size: 17px;
           text-align: justify;
+          font-size: 20px;
         }
         button {
           all: unset;
