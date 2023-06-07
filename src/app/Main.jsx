@@ -1,9 +1,11 @@
 import React from "react";
 import Hero from "src/components/Hero";
+
+/* Do not import component using @/component/ , there will be error in production */
 // import Hero from "@/components/Hero";
-import MeetTeam from "@/components/MeetOurTeam";
+// import MeetTeam from "@/components/MeetOurTeam";
 import FeaturedEvents from "@/components/FeaturedEvent";
-import Testimonials from "@/components/Testimonials";
+import Testimonials from "src/components/Testimonials";
 
 const Main = () => {
   const featuredEvent = [
